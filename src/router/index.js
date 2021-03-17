@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Export from "../components/Export.vue"
 import Page1 from '../components/Page1.vue'
 import Page2 from '../components/Page2.vue'
+import SearchBar from '../components/SearchBar.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -24,6 +25,11 @@ const routes = [{
     name: 'Page2',
     component: Page2,
   },
+  {
+    path: '/SearchBar',
+    name: 'SearchBar',
+    component: SearchBar,
+  }
 ]
 const router = new VueRouter({
   mode: 'history',

@@ -1,12 +1,17 @@
 <template>
   <div id="page">
+    <searchBar></searchBar>
     <h1>我是主页</h1>
   </div>
 </template>
 
 <script>
+import SearchBar from './SearchBar'
 export default {
   name: 'Export',
+  components: {
+    "searchBar": SearchBar
+  }
 }
 </script>
 
