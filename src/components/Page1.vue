@@ -15,7 +15,7 @@ export default {
   margin: 0;
   padding: 0;
   background: lightgreen;
-  height: 600px;
+  height: 920px;
   width: 100%;
 }
 </style>
