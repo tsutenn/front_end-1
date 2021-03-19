@@ -1,6 +1,7 @@
 
 <template>
-  <div id="app">
+  <div id="app"
+       :style="{ backgroundImage: 'url(' + showBackgroundStyle + ')' }">
     <navigation></navigation>
     <router-view></router-view>
   </div>
@@ -8,14 +9,16 @@
 
 <script>
 import navigation from './components/navigation'
-import Page1 from './components/Page1'
-import Page2 from './components/Page2'
+
 export default {
   name: 'App',
   components: {
     "navigation": navigation,
-    "page1": Page1,
-    "page2": Page2,
+  },
+  data(){
+    return{
+      showBackgroundStyle: require("./assets/background-image.jpg")
+    };
   }
 }
 </script>
