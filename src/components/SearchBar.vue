@@ -55,13 +55,13 @@ button {
 }
 
 #cover {
-  position: absolute;
-  top: 50%;
+  position: inherit;
+  top: 0;
   left: 0;
   right: 0;
-  width: 550px;
+  width: 1000px;
   padding: 35px;
-  margin: -83px auto 0 auto;
+  margin: 100px auto 0 auto;
   background-color: #ff7575;
   border-radius: 20px;
   box-shadow: 0 10px 40px #ff7c7c, 0 0 0 20px #ffffffeb;
