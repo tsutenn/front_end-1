@@ -1,7 +1,7 @@
 
 <template>
   <div id="app"
-       :style="{ backgroundImage: 'url(' + showBackgroundStyle + ')' }">
+       v-bind:style="{ backgroundImage: 'url(' + imgSrc + ')', }">
     <navigation></navigation>
     <router-view></router-view>
   </div>
@@ -17,11 +17,18 @@ export default {
   },
   data(){
     return{
-      showBackgroundStyle: require("./assets/background-image.jpg")
+      imgSrc: require('./assets/background-image.jpg')
     };
-  }
+  },
 }
 </script>
 
 <style>
+#app{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-size: cover;
+  background-attachment: fixed;
+}
 </style>
